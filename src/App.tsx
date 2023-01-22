@@ -1,6 +1,4 @@
-import React, { createContext, useState } from "react";
-// import { ApolloProvider } from "@apollo/client";
-// import apolloClient from "../lib/apollo";
+import { createContext, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
