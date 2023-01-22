@@ -1,3 +1,2 @@
+![Piñata_logo](https://user-images.githubusercontent.com/19430799/213939958-548d3f47-1e4c-4ea5-bc5a-d458a6e73ad2.svg)
 # tangojs
-
-![Piñata](https://user-images.githubusercontent.com/19430799/213939766-98e4bfb3-e0bb-47df-b2a1-7ae5da978cbd.svg)
