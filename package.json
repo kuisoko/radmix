@@ -1,7 +1,7 @@
 {
-  "name": "kuisoko-web",
+  "name": "@j33n/tangojs",
   "version": "0.0.1",
-  "description": "kuisoko web",
+  "description": "tangojs",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open --hot",
@@ -28,11 +28,9 @@
     "@babel/core": "^7.20.7",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.2.4",
-    "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
-    "@types/unsplash-js": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -42,5 +40,17 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuisoko/tangojs.git"
+  },
+  "keywords": [
+    "react",
+    "component-library"
+  ],
+  "bugs": {
+    "url": "https://github.com/kuisoko/tangojs/issues"
+  },
+  "homepage": "https://github.com/kuisoko/tangojs#readme"
 }
