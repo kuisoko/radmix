@@ -22,7 +22,8 @@
     "react-router-dom": "^6.6.1",
     "react-spring": "^9.6.1",
     "styled-components": "^5.3.6",
-    "theme-ui": "^0.15.4"
+    "theme-ui": "^0.15.4",
+    "twemoji": "^14.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
