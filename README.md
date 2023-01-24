@@ -15,7 +15,7 @@
 
 ## Contributing
 
-If you're interested in contributing code and/or documentation, please see [our guide to contributing](docs/pages/contributing.md).
+Feel free to raise an Issue or PR
 
 ## Code of Conduct
 
