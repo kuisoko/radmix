@@ -9,6 +9,44 @@
 
 🧑🏿‍💻 This repository contains the tangojs source code. This repo is a work in progress, so we appreciate your patience as we figure things out.
 
+# Supported Components
+
+- [ ] Accordion
+- [ ] Alert Dialog
+- [ ] Aspect Ratio
+- [ ] Avatar
+- [ ] Checkbox
+- [ ] Collapsible
+- [ ] Context Menu
+- [ ] Dialog
+- [ ] DropDown Menu
+- [ ] Hover Card
+- [ ] Card
+- [ ] Label
+- [ ] Menubar
+- [ ] Navigation Menu
+- [ ] Popover
+- [ ] Progress
+- [ ] Radio Group
+- [ ] Scroll Area
+- [ ] Select
+- [ ] Separator
+- [ ] Slider
+- [ ] switch
+- [ ] Tabs
+- [ ] Toast
+- [ ] Toggle
+- [ ] Toggle Group
+- [ ] Toolbar
+- [ ] Tooltip
+
+# Utilities
+- [ ] Icons
+- [ ] Emoticons
+
+
+
+
 ## Documentation
 
 📖 Documentation about tangojs are also still being worked on
