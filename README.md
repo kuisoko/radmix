@@ -5,7 +5,7 @@
 
 🎉 We are happy you're here!
 
-[tangojs](https://tangojs.run) is a full stack web framework that lets you build modern ecommerce components, built on top of [remix-run](https://github.com/remix-run/remix) and [Radix-UI](https://www.radix-ui.com/).
+[tangojs](https://tangojs.run) is a full stack web framework that lets you build modern ecommerce components, built with [remix-run](https://github.com/remix-run/remix).
 
 🧑🏿‍💻 This repository contains the tangojs source code. This repo is a work in progress, so we appreciate your patience as we figure things out.
 
