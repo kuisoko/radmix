@@ -3,10 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 import { theme } from "./themes";
-
-import { RouterProvider } from "react-router-dom";
-
-import Routes from "./Routes";
+import { Box, Layout } from "./components";
 
 export const ThemePreferenceContext = createContext(null);
 
@@ -24,9 +21,23 @@ export const App = () => {
   const [currentTheme, setCurrentTheme] = useState("dark");
 
   return (
-    <ThemeProvider theme={{ ...theme, colors: theme.colors.modes[currentTheme] }}>
+    <ThemeProvider
+      theme={{ ...theme, colors: theme.colors.modes[currentTheme] }}
+    >
       <GlobalStyles />
-      <RouterProvider router={Routes} />
+      <ThemePreferenceContext.Provider
+        value={{ currentTheme, setCurrentTheme }}
+      >
+        <Layout>
+          <Box sx={{ p: "1rem" }}>
+            <h1>Styled Components</h1>
+            <p>
+              This is a simple example of how to use styled components in a
+              React app.
+            </p>
+          </Box>
+        </Layout>
+      </ThemePreferenceContext.Provider>
     </ThemeProvider>
   );
 };

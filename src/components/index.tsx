@@ -36,14 +36,14 @@ import {
   Slider,
 } from "theme-ui";
 
-import Button from "./Forms/Button/Button";
-import Layout from "./Layout/Layout";
-import Header from "./Layout/Header";
-import Footer from "./Layout/Footer";
-import Box from "./Layout/Box/Box";
-import Preview from "./Layout/Preview/Preview";
-import Sidebar from "./Layout/Sidebar/Sidebar";
-import Alert from "./Alert/Alert";
+import Button from "./forms/Button/Button";
+import Layout from "./layout/Layout";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
+import Box from "./layout/Box/Box";
+import Preview from "./layout/Preview/Preview";
+import Sidebar from "./layout/Sidebar/Sidebar";
+import Alert from "./alert/Alert";
 import ComponentView from "./DataDisplay/ComponentView";
 
 export const components = {

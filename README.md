@@ -26,6 +26,7 @@
 - [ ] Label
 - [ ] Menubar
 - [ ] Navigation Menu
+- [ ] Panel
 - [ ] Popover
 - [ ] Progress
 - [ ] Radio Group

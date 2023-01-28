@@ -24,37 +24,8 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const LogoBox = styled(Block)<ILogoBox>`
-  position: absolute;
-  /* consider Instagram link border */
-  /* border: 5px solid ${({ theme: { colors } }) => colors.border}; */
-  box-shadow: ${({ theme: { colors } }) =>
-    colors.boxShadow + " 0px 0px 5px 0px"};
-  background: ${({ theme: { colors } }) => colors.background};
-  left: 0;
-  right: 0;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  z-index: ${theme.zIndices.nav};
-  padding: 0.3rem;
-  border-radius: 1.5rem;
-  height: 100px;
-  width: 100px;
-  /* animate width and height */
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-
-  /* make logo height 60 in studio */
-  ${({ studio }) =>
-    studio &&
-    `
-    height: 60px;
-    width: 60px;
-  `};
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
+export const LogoBox = styled(Block)`
+  display: flex;
 `;
 
 export const StyledDropDown = styled.div<IDropDown>`

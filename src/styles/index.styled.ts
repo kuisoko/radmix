@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
 
 import { Avatar } from "../components";
 import { Title } from "./studio.styled";
@@ -74,7 +73,7 @@ export const BaseParagraph = styled(Paragraph)`
   width: 100%;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;

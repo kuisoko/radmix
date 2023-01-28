@@ -3,19 +3,24 @@ import twemoji from "twemoji";
 import { StyledEmoji } from "./Emoji.styled";
 
 export interface IEmoji {
-  emoji: string;
+  symbol: string;
   size?: string;
 }
 
-const Emoji = ({ emoji, size }: IEmoji) => (
-  <StyledEmoji size={size}
+export const useEmoji = (symbol: string, size: string) => (
+  <StyledEmoji
+    size={size}
     dangerouslySetInnerHTML={{
-      __html: twemoji.parse(emoji, {
+      __html: twemoji.parse(symbol, {
         folder: "svg",
         ext: ".svg",
       }),
     }}
   />
 );
+
+const Emoji = ({ symbol, size }: IEmoji) => {
+  return useEmoji(symbol, size);
+};
 
 export default memo(Emoji);

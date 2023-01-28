@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { WiMoonAltFirstQuarter, WiMoonAltThirdQuarter } from "react-icons/wi";
 
 import { Box, Grid, Header } from "..";
-import Logo from "../../assets/images/logo2.svg";
+
 import {
   Container,
   LogoBox,
@@ -12,6 +11,8 @@ import {
   StyledThemeSwitcher,
 } from "./Layout.styled";
 import { StyledAvatar } from "../../styles/index.styled";
+import Emoji from "../emoji/Emoji";
+import { VscGithub } from "react-icons/vsc";
 
 export interface IDropDownMenu {
   children: React.ReactNode;
@@ -42,16 +43,14 @@ const Layout = ({
 
   return (
     <Container {...restProps}>
-      <Header title="Build and deploy in the African marketplace with ease">
+      <Header title="">
         <Grid columns={[2, "1fr 2fr"]} sx={{ position: "relative" }}>
-          <Box sx={{ display: "flex", alignItems: "center" }}>
-            <StyledInput placeholder="Search for products, brands and categories" />
-          </Box>
-          <LogoBox studio={true}>
-            <Link to="/">
-              <img src={Logo} />
-            </Link>
+          <LogoBox>
+            <Emoji symbol="🪅" size="64px" />
           </LogoBox>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <StyledInput placeholder="Search for components, ..." />
+          </Box>
           <Box
             sx={{
               display: "flex",
@@ -61,8 +60,8 @@ const Layout = ({
             }}
           >
             <StyledThemeSwitcher>
-              <Link
-                to={".."}
+              <a
+                href="/#"
                 onClick={() => {
                   toggleTheme(currentTheme === "light" ? "dark" : "light");
                   setShowDropDown(false);
@@ -73,18 +72,18 @@ const Layout = ({
                 ) : (
                   <WiMoonAltThirdQuarter size={20} />
                 )}
-              </Link>
+              </a>
             </StyledThemeSwitcher>
-            <StyledAvatar
-              src="https://avatars.githubusercontent.com/u/11758660?v=4"
-              onClick={() => setShowDropDown(!showDropDown)}
-            />
+            {/* react icons GithubIcon */}
+            <a href="https://github.com/kuisoko/tangojs">
+              <VscGithub />
+            </a>
           </Box>
         </Grid>
       </Header>
       <DropDownMenu show={showDropDown}>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
+        <a href="/docs">Docs</a>
+        <a href="/register">Register</a>
       </DropDownMenu>
       <>{children}</>
     </Container>
