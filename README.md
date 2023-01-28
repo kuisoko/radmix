@@ -9,8 +9,9 @@
 
 🧑🏿‍💻 This repository contains the tangojs source code. This repo is a work in progress, so we appreciate your patience as we figure things out.
 
-# Supported Components
+## Components
 
+### Base Components
 - [ ] Accordion
 - [ ] Alert Dialog
 - [ ] Aspect Ratio
@@ -32,7 +33,7 @@
 - [ ] Select
 - [ ] Separator
 - [ ] Slider
-- [ ] switch
+- [ ] Switch
 - [ ] Tabs
 - [ ] Toast
 - [ ] Toggle
@@ -40,10 +41,13 @@
 - [ ] Toolbar
 - [ ] Tooltip
 
-# Utilities
+### Full Stack Components
+- [ ] Checkout
+- [ ] Add to Cart
+
+### Utilities
 - [ ] Icons
 - [ ] Emoticons
-
 
 
 

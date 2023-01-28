@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 import { CiCircleRemove } from "react-icons/ci";
 
 import { Box } from "theme-ui";
