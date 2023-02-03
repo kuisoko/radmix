@@ -3,7 +3,8 @@ import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 import { theme } from "./themes";
-import { Box, Layout } from "./components";
+import { Layout } from "./components";
+import DocsPage from "./docs";
 
 export const ThemePreferenceContext = createContext(null);
 
@@ -29,13 +30,7 @@ export const App = () => {
         value={{ currentTheme, setCurrentTheme }}
       >
         <Layout>
-          <Box sx={{ p: "1rem" }}>
-            <h1>Styled Components</h1>
-            <p>
-              This is a simple example of how to use styled components in a
-              React app.
-            </p>
-          </Box>
+            <DocsPage />
         </Layout>
       </ThemePreferenceContext.Provider>
     </ThemeProvider>

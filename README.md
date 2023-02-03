@@ -1,13 +1,13 @@
 ![Piñata_logo](https://user-images.githubusercontent.com/19430799/213939958-548d3f47-1e4c-4ea5-bc5a-d458a6e73ad2.svg)
-# tangojs
+# radmix
 
-# Welcome to tangojs!
+# Welcome to radmix!
 
 🎉 We are happy you're here!
 
-[tangojs](https://tangojs.run) is a full stack web framework that lets you build modern ecommerce components, built with [remix-run](https://github.com/remix-run/remix).
+Radmix is a full stack web framework that lets you build modern ecommerce components, built with [remix-run](https://github.com/remix-run/remix).
 
-🧑🏿‍💻 This repository contains the tangojs source code. This repo is a work in progress, so we appreciate your patience as we figure things out.
+🧑🏿‍💻 This repository contains the radmix source code. This repo is a work in progress, so we appreciate your patience as we figure things out.
 
 ## Components
 
@@ -54,7 +54,7 @@
 
 ## Documentation
 
-📖 Documentation about tangojs are also still being worked on
+📖 Documentation about radmix are also still being worked on
 
 ## Contributing
 

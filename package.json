@@ -1,7 +1,7 @@
 {
-  "name": "@j33n/tangojs",
+  "name": "@j33n/radmix",
   "version": "0.0.1",
-  "description": "tangojs",
+  "description": "radmix",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open --hot",
@@ -54,14 +54,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kuisoko/tangojs.git"
+    "url": "git+https://github.com/kuisoko/radmix.git"
   },
   "keywords": [
     "react",
     "component-library"
   ],
   "bugs": {
-    "url": "https://github.com/kuisoko/tangojs/issues"
+    "url": "https://github.com/kuisoko/radmix/issues"
   },
-  "homepage": "https://github.com/kuisoko/tangojs#readme"
+  "homepage": "https://github.com/kuisoko/radmix#readme"
 }

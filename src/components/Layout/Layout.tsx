@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import { WiMoonAltFirstQuarter, WiMoonAltThirdQuarter } from "react-icons/wi";
 
-import { Box, Grid, Header } from "..";
+import { Box } from "..";
 
 import {
   Container,
   LogoBox,
   StyledDropDown,
+  StyledGitIcon,
+  StyledHeader,
   StyledInput,
   StyledThemeSwitcher,
 } from "./Layout.styled";
-import { StyledAvatar } from "../../styles/index.styled";
+
 import Emoji from "../emoji/Emoji";
 import { VscGithub } from "react-icons/vsc";
+import styled from "styled-components";
 
 export interface IDropDownMenu {
   children: React.ReactNode;
@@ -43,44 +46,41 @@ const Layout = ({
 
   return (
     <Container {...restProps}>
-      <Header title="">
-        <Grid columns={[2, "1fr 2fr"]} sx={{ position: "relative" }}>
-          <LogoBox>
-            <Emoji symbol="🪅" size="64px" />
-          </LogoBox>
-          <Box sx={{ display: "flex", alignItems: "center" }}>
-            <StyledInput placeholder="Search for components, ..." />
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              mr: "1.5rem",
-              alignItems: "center",
-            }}
-          >
-            <StyledThemeSwitcher>
-              <a
-                href="/#"
-                onClick={() => {
-                  toggleTheme(currentTheme === "light" ? "dark" : "light");
-                  setShowDropDown(false);
-                }}
-              >
-                {currentTheme === "light" ? (
-                  <WiMoonAltFirstQuarter size={20} />
-                ) : (
-                  <WiMoonAltThirdQuarter size={20} />
-                )}
-              </a>
-            </StyledThemeSwitcher>
-            {/* react icons GithubIcon */}
-            <a href="https://github.com/kuisoko/tangojs">
-              <VscGithub />
+      <StyledHeader>
+        <LogoBox>
+          <Emoji symbol="🪅" size="64px" />
+        </LogoBox>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <StyledInput placeholder="Search for components, ..." />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+            mr: "1.5rem",
+            alignItems: "center",
+          }}
+        >
+          <StyledThemeSwitcher>
+            <a
+              href="/#"
+              onClick={() => {
+                toggleTheme(currentTheme === "light" ? "dark" : "light");
+                setShowDropDown(false);
+              }}
+            >
+              {currentTheme === "light" ? (
+                <WiMoonAltFirstQuarter size={20} />
+              ) : (
+                <WiMoonAltThirdQuarter size={20} />
+              )}
             </a>
-          </Box>
-        </Grid>
-      </Header>
+          </StyledThemeSwitcher>
+          <StyledGitIcon href="https://github.com/kuisoko/radmix">
+            <VscGithub />
+          </StyledGitIcon>
+        </Box>
+      </StyledHeader>
       <DropDownMenu show={showDropDown}>
         <a href="/docs">Docs</a>
         <a href="/register">Register</a>
