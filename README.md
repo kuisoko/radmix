@@ -5,7 +5,7 @@
 
 🎉 We are happy you're here!
 
-Radmix is a full stack web framework that lets you build modern ecommerce components, built with [remix-run](https://github.com/remix-run/remix).
+Radmix is a web framework that lets you build modern accessible fullstack components.
 
 🧑🏿‍💻 This repository contains the radmix source code. This repo is a work in progress, so we appreciate your patience as we figure things out.
 
